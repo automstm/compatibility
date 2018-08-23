@@ -23,7 +23,7 @@ Before do |scenario|
       capabilities['version'] = '61'
       # Selenium::WebDriver::Chrome.driver_path = "N:\\Shared\\Ruby\\Singtel\\features\\chromedriver.exe"
 
-      Selenium::WebDriver::Chrome.driver_path = Dir.pwd+"\\features\\chromedriver.exe"
+      Selenium::WebDriver::Chrome.driver_path = Dir.pwd+"\\features\\support\\chromedriver.exe"
       @browser = Watir::Browser.new :chrome
       # Watir::Browser.start "http://:{#$proxy}@"
     when "firefox54"
@@ -55,7 +55,7 @@ end
 
 After do |scenario|
 
-  filename = scenario.name+" "+DateTime.now.strftime("%d%b%Y%H%M%S")
+  filename = scenario.name
   @browser.screenshot.save("target/#{filename}.png")
   embed("target/#{filename}.png", "image/png")
   @scenariostaus =scenario.status
