@@ -24,8 +24,8 @@ Given(/^I launch the ems page$/) do
   @hpage = Homepage.new(@browser)
   @hpage.emslogin.title
 
-  @hpage.ProductsServices.hover
-  puts @hpage.MyAccount.text
+  # @hpage.ProductsServices.hover
+  # puts @hpage.MyAccount.text
 
 
 end
