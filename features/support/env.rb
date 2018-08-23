@@ -35,7 +35,6 @@ Before do |scenario|
       capabilities['browserName'] = 'firefox'
       capabilities['version'] = '61'
       Selenium::WebDriver::Firefox.driver_path = "N:\\Shared\\Ruby\\Singtel\\features\\geckodriver.exe"
-
       # profile["network.proxy.type"] = 2
       # profile.proxy = Selenium::WebDriver::Proxy.new :pac => $proxy
 
