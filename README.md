@@ -14,3 +14,6 @@ button1 = @browser.input(:class => "mileage_rate")
 @browser.scroll.to :bottom
 
 browser.scroll.to [0, 200]
+
+Command to Run
+cucumber -t @ems browsername=chrome61
